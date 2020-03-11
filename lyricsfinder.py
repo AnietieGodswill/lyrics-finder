@@ -86,7 +86,7 @@ if song_inp == '1':
         #print(b)
         new_val_1 = "https://www.lyrics.com"+b_one
         #print(new_val)
-        first_req = requests.get(new_val)
+        first_req = requests.get(new_val_1)
         soup_1 = BeautifulSoup(first_req.content, 'html.parser')
         find_1 = soup_1.find(id="lyric-body-text")
         print(find_1.text)
