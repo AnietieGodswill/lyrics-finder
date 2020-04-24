@@ -141,7 +141,7 @@ if song_inp == '1':
         eight_req = requests.get(new_val_8)
         soup_8 = BeautifulSoup(eight_req.content, 'html.parser')
         find_8 = soup_8.find(id="lyric-body-text")
-        print(find_6.text)
+        print(find_8.text)
     elif choose == '9':
         b_nine = scrapme[8].find("a").get('href')
         new_val_9 = "https://www.lyrics.com"+b_nine
